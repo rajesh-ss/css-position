@@ -1,0 +1,262 @@
+/* Declaring variables */
+
+:root{
+
+    --parent: rgb(240, 214, 214);
+    --child-one:rgb(139, 196, 250);
+    --child-two:rgb(243, 155, 216);
+    --child-three:rgb(121, 236, 117);
+    --font-size: 1rem;
+}
+
+body{
+    height:200vh;
+}
+
+/***********************************
+********* Static position **********
+************************************/
+
+
+.top-margin{
+    margin-top: 100px;
+    border: 2px solid black;
+}
+
+.static-parent{
+
+    width: 30%;
+    height: 12vh;
+    background-color: var(--parent);
+    border: 1px solid black;
+    font-size: var(--font-size);
+    padding: 10px;
+
+}
+
+.static-child1{
+    background-color: var(--child-one);
+    width: 60%;
+    height: 30%;
+    right: 10px;
+    /* margin: 0 auto; */
+}
+
+.static-child2{
+    width: 60%;
+    height: 30%;
+    left: 10px;
+    background-color: var(--child-two);
+}
+
+
+.static-child3{
+    width: 60%;
+    height: 30%;
+    right: 10px;
+    background-color: var(--child-three);
+}
+
+
+/******************************************
+*********** Relative position *************
+*******************************************/
+
+.Relative-parent{
+
+    width: 30%;
+    height: 12vh;
+    background-color: var(--parent);
+    border: 1px solid black;
+    font-size: var(--font-size);
+    /* border: 10px solid black; */
+    padding: 10px;
+
+}
+
+.Relative-child1{
+
+
+    position: relative;
+    background-color: var(--child-one);
+    width: 60%;
+    height: 30%;
+    left: 10px;
+    margin: 0 auto;
+}
+
+.Relative-child2{
+
+
+    position: relative;
+    width: 60%;
+    height: 30%;
+    right: 10px;
+    background-color: var(--child-two);
+    margin: 0 auto;
+
+}
+.Relative-child3{
+
+
+    position: relative;
+    width: 60%;
+    height: 30%;
+    left: 10px;
+    background-color: var(--child-three);
+    margin: 0 auto;
+}
+
+/******************************************
+*********** Absolute position *************
+*******************************************/
+
+.Absolute-parent{
+
+    position: relative;
+    width: 30%;
+    height: 12vh;
+    background-color: var(--parent);
+    border: 1px solid black;
+    font-size: var(--font-size);
+    /* border: 10px solid black; */
+   padding: 0;
+
+}
+
+.Absolute-child1{
+
+    position: absolute;
+    background-color: var(--child-one);
+    width: 20%;
+    height: 100%;
+    margin: 0 auto;
+    opacity: 0.5;
+    transform: rotate(90);
+}
+.Absolute-child2{
+
+    position: absolute;
+    text-align: end;
+    background-color: var(--child-two);
+    width: 100%;
+    height: 30%;
+    opacity: 0.5;
+    margin: 0 auto;
+
+}
+.Absolute-child3{
+
+    position: absolute;
+    text-align: end;
+    background-color: var(--child-three);
+    width: 100%;
+    height: 30%;
+    margin: 0 auto;
+    top: 70%;
+    opacity: 0.5;
+}
+/******************************************
+************* Fixed position **************
+*******************************************/
+
+.Fixed-parent{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--parent);
+    border: 1px solid black;
+    font-size: var(--font-size);
+    /* border: 10px solid black; */
+   padding: 0;
+   top: 10px;
+
+}
+
+.Fixed-child1{
+
+    border: 1px solid black;
+    position: fixed;
+    background-color: var(--child-one);
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    opacity: 0.5;
+    left:10%;
+    
+
+}
+.Fixed-child2{
+    border: 1px solid black;
+    position: fixed;
+    text-align: end;
+    background-color: var(--child-two);
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    margin: 0 auto;
+    left:20%;
+
+}
+.Fixed-child3{
+
+    border: 1px solid black;
+    position: fixed;
+    background-color: var(--child-three);
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    opacity: 0.5;
+    left:30%;
+
+}
+
+/*******************************************
+************* Sticky position **************
+********************************************/
+
+.Sticky-parent{
+    position: static;
+    width: 30%;
+    height: 12vh;
+    background-color: var(--parent);
+    border: 1px solid black;
+    font-size: var(--font-size);
+    /* border: 10px solid black; */
+   padding: 0;
+
+}
+
+.Sticky-child1{
+
+    position: sticky;
+    background-color: var(--child-one);
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    opacity: 0.5;
+
+    
+
+}
+.Sticky-child2{
+
+    position: sticky;
+    text-align: end;
+    background-color: var(--child-two);
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    margin: 0 auto;
+
+}
+.Sticky-child3{
+
+    position: sticky;
+    text-align: end;
+    background-color: var(--child-three);
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    opacity: 0.5;
+}
